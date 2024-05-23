@@ -95,7 +95,7 @@ app.put("/libros/:id", async (req, res) => {
   }
 });
 
-//Ruta para eliminar por ID
+//Ruta para encontrar y eliminar por ID
 app.delete("/libros/:id", async (req, res) => {
   try {
     const libro = await Libro.findByIdAndDelete(req.params.id);
